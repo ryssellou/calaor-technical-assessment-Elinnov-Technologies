@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime and Factorial Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Main container for the application -->
+        <h1>Prime and Factorial Calculator</h1>
+        <!-- Title of the application -->
+        <form id="calculator-form">
+            <!-- Form for number input and submission -->
+            <label for="number">Enter a number:</label>
+            <!-- Label for the number input field -->
+            <input type="text" id="number" name="number" required>
+            <!-- Input field for the number -->
+            <div class="keyboard">
+                <!-- Virtual keyboard for user input -->
+                <button type="button" class="key">1</button>
+                <button type="button" class="key">2</button>
+                <button type="button" class="key">3</button>
+                <button type="button" class="key">4</button>
+                <button type="button" class="key">5</button>
+                <button type="button" class="key">6</button>
+                <button type="button" class="key">7</button>
+                <button type="button" class="key">8</button>
+                <button type="button" class="key">9</button>
+                <button type="button" class="key">0</button>
+                <button type="button" class="key delete">DEL</button>
+                <!-- Delete button to remove the last character -->
+                <button type="button" class="key clear">CLR</button>
+                <!-- Clear button to clear the input field -->
+            </div>
+            <button type="submit">Submit</button>
+            <!-- Submit button to send the form -->
+        </form>
+        <div id="result" class="result"></div>
+        <!-- Div to display the results -->
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- Link to the external JavaScript file -->
+</body>
+</html>
